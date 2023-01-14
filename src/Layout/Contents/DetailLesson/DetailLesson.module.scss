@@ -1,0 +1,51 @@
+.wrapper {
+  width: 100%;
+  height: 100%;
+  padding-top: 20px;
+}
+.video {
+  width: max-content;
+  margin: 0 auto;
+}
+.heading {
+  display: flex;
+}
+.title {
+  padding-left: 40px;
+  flex: 1 1;
+}
+.action {
+  display: flex;
+  flex: 1 1;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 40px;
+}
+.btn-open-doc {
+  padding: 10px;
+  outline: none;
+  border-radius: 8px;
+  border: none;
+  font-weight: 600;
+  background: linear-gradient(to right, #6c2cf7, #fab5a6);
+  color: #fff;
+  cursor: pointer;
+
+  &:hover {
+    background: linear-gradient(to right, #fab5a6, #6c2cf7);
+  }
+  &:active {
+    opacity: 0.5;
+  }
+}
+.name-lesson {
+  margin-bottom: 6px;
+}
+.update {
+  font-size: smaller;
+  font-weight: 300;
+  margin-top: 13px;
+}
+.description {
+  padding-left: 40px;
+}

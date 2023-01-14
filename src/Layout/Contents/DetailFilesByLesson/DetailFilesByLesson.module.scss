@@ -1,0 +1,17 @@
+.wrapper {
+  background-color: aqua;
+}
+.title {
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+.body {
+  display: flex;
+  flex-wrap: wrap;
+}
+.item {
+  display: block;
+  width: 30%;
+  margin: 14px;
+  background-color: antiquewhite;
+}

@@ -1,0 +1,13 @@
+.App {
+  min-height: 100vh;
+  width: var(--wight-content);
+  display: flex;
+  flex-direction: column; /* 
+  background-color: rgb(233, 147, 34); */
+
+  margin-top: var(--height-header);
+}
+.App-Content {
+  margin-left: var(--width-sidebar);
+  height: 100vh;
+}
