@@ -21,6 +21,10 @@
     font-size: 14px;
   }
 }
+.icon-bars {
+  display: none;
+  cursor: pointer;
+}
 .logo {
   background-image: url('../../Access/logo.png');
   background-size: cover;
@@ -47,12 +51,13 @@
   background: linear-gradient(to right, #fe2c55, #fe742c);
   color: #fffff4;
   transition: all 0.3s ease;
-}
-.login:hover {
-  background: linear-gradient(to right, #fe742c, #fe2c55);
-}
-.login:active {
-  opacity: 0.8;
+
+  &:hover {
+    background: linear-gradient(to right, #fe742c, #fe2c55);
+  }
+  &:active {
+    opacity: 0.8;
+  }
 }
 .signin {
   font-size: 14px;
@@ -65,100 +70,43 @@
   color: #fe2c55;
   background: linear-gradient(to right, #fff3fc, #f8d5db);
   transition: all ease 0.3s;
-}
-.signin:hover {
-  background: linear-gradient(to right, #f8d5db, #fff3fc);
-}
-.signin:active {
-  opacity: 0.8;
-}
-/* 
-
-
-
-
-
-
-
-
-*/
-
-.avatar-wrapper {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.avatar {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-color: #d3d1ce;
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover;
-}
-.name {
-  color: red;
-  font-size: 14px;
-  margin: 0px 0 0 0;
-}
-.exam-btn {
-  text-decoration: none;
-  font-size: 16px;
-  font-weight: 600;
-  color: #aaa;
-  padding: 8px;
-  margin-right: 10px;
-  width: 100px;
-  height: fit-content;
-  cursor: pointer;
-  border: 1px solid #aaa;
-  border-radius: 6px;
-
-  transition: all 0.3s ease;
-  display: flex;
-  align-items: center;
-}
-.exam-btn svg {
-  font-size: 16px;
-  margin-right: 10px;
-}
-.active {
-  background: linear-gradient(to right, #ff7e3f, #ffba3f);
-  color: #fff;
-  border: none;
-}
-.exam-btn:hover {
-  background: linear-gradient(to right, #ff7e3f, #ffba3f);
-  color: #fff;
-  border: none;
-}
-.user-option {
-  display: flex;
-  flex-direction: column;
-  width: max-content;
-}
-.user-option span {
-  width: 100%;
-  padding: 6px;
-  margin-bottom: 8px;
-  border-radius: 4px;
-  font-size: 16px;
-  color: black;
-  font-weight: 500;
-  transition: all ease 0.25s;
-  a {
-    text-decoration: none;
-    color: black;
-    &:hover {
-      color: #fff;
-    }
-  }
 
   &:hover {
-    cursor: pointer;
-    background-color: #ffa73f;
-    color: #fff;
+    background: linear-gradient(to right, #f8d5db, #fff3fc);
+  }
+  &:active {
+    opacity: 0.8;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .wrapper {
+    padding: 0 4px;
+  }
+  .login {
+    padding: 10px;
+  }
+  .signin {
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .icon-bars {
+    display: block;
+    margin: 6px 24px;
+    font-size: 24px;
+    color: #707070;
+  }
+  .logo {
+    display: none;
+  }
+}
+@media screen and (max-width: 500px) {
+  .login {
+    padding: 8px;
+    font-size: 12px;
+  }
+  .signin {
+    padding: 8px;
+    font-size: 12px;
   }
 }

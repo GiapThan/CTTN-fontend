@@ -1,78 +1,53 @@
+import { useEffect, useState } from 'react';
 import classNames from 'classnames/bind';
 import { Link } from 'react-router-dom';
-import { publicRoutes } from '../../../Routes';
 
+import { publicRoutes } from '../../../Routes';
 import CommonItem from '../CommonItem/CommonItem';
 import styles from './ScrollList.module.scss';
+import { Lesson } from '../../../Access/db';
 
 const cx = classNames.bind(styles);
 
 const ScrollList = (props) => {
-  console.log(props);
+  /* 
+  props= {titleGroup: '',idGroup}
+   */
+  const [lesson, setLesson] = useState([]);
+
+  useEffect(() => {
+    const newArr = Lesson.filter((e) => e.groupId === props.idGroup);
+    setLesson(newArr);
+  }, []);
+
   return (
     <div className={cx('wrapper')}>
       <div className={cx('heading')}>
-        <h3>{props.titleCourse}</h3>
+        <h3>{props.titleGroup}</h3>
       </div>
       <div className={cx('body')}>
         <section className={cx('contents')}>
-          <section className={cx('course-item')}>
-            <CommonItem>
-              <Link
-                to={`${publicRoutes.lessonById}/1`}
-                style={{
-                  backgroundImage: `url(${'https://drive.google.com/uc?export=view&id=1NmeRnjX0wNuYXVR1sWkwjD3AOwvbZNC_'})`,
-                }}
-                className={cx('has-link')}
-              >
-                <div className={cx('overlay')}></div>
-                <button className={cx('cta-btn')}>Xem bài học</button>
-              </Link>
-              <h4 className={cx('title')}>
-                <Link to={`${publicRoutes.lessonById}/1`}>
-                  Bài 1: Khái niệm vectơ
+          {lesson.map((e, i) => (
+            <section className={cx('course-item')}>
+              <CommonItem>
+                <Link
+                  to={`${publicRoutes.lessonById}/${e.id}`}
+                  style={{
+                    backgroundImage: `url(${e.linkAvt})`,
+                  }}
+                  className={cx('has-link')}
+                >
+                  <div className={cx('overlay')}></div>
+                  <button className={cx('cta-btn')}>Xem bài học</button>
                 </Link>
-              </h4>
-            </CommonItem>
-          </section>
-          <section className={cx('course-item')}>
-            <CommonItem>
-              <Link
-                to={`${publicRoutes.lessonById}/1`}
-                style={{
-                  backgroundImage: `url(${'https://drive.google.com/uc?export=view&id=11r4FNPiHtprEOIPK4I5hidFPd0-PyR-x'})`,
-                }}
-                className={cx('has-link')}
-              >
-                <div className={cx('overlay')}></div>
-                <button className={cx('cta-btn')}>Xem bài học</button>
-              </Link>
-              <h4 className={cx('title')}>
-                <Link to={`${publicRoutes.lessonById}/2`}>
-                  Bài 2: Tổng và hiệu 2 vectơ
-                </Link>
-              </h4>
-            </CommonItem>
-          </section>
-          <section className={cx('course-item')}>
-            <CommonItem>
-              <Link
-                to={`${publicRoutes.lessonById}/1`}
-                style={{
-                  backgroundImage: `url(${'https://drive.google.com/uc?export=view&id=1X_9jKANCXLex2lwCQghLnuzFp3kh1Fo1'})`,
-                }}
-                className={cx('has-link')}
-              >
-                <div className={cx('overlay')}></div>
-                <button className={cx('cta-btn')}>Xem bài học</button>
-              </Link>
-              <h4 className={cx('title')}>
-                <Link to={`${publicRoutes.lessonById}/3`}>
-                  Bài 3: Tích của một số với một vectơ
-                </Link>
-              </h4>
-            </CommonItem>
-          </section>
+                <h4 className={cx('title')}>
+                  <Link to={`${publicRoutes.lessonById}/${e.id}`}>
+                    {e.name}
+                  </Link>
+                </h4>
+              </CommonItem>
+            </section>
+          ))}
         </section>
       </div>
     </div>

@@ -8,6 +8,7 @@ import SideBar from './Layout/SideBar/SideBar';
 import HomePage from './Layout/Contents/HomePage/HomePage';
 import DetailLesson from './Layout/Contents/DetailLesson/DetailLesson';
 import DetailFiles from './Layout/Contents/DetailFiles/DetailFiles';
+import DetailDocumentById from './Layout/Contents/DetailDocumentById/DetailDocumentById';
 
 function App() {
   return (
@@ -27,13 +28,14 @@ function App() {
             path={`${publicRoutes.lessonById}/:id`}
             element={<DetailLesson />}
           />
+          <Route
+            path={`${publicRoutes.docById}/:id`}
+            element={<DetailDocumentById />}
+          />
           <Route path="*" element={<Redirect />} />
         </Routes>
       </div>
     </div>
   );
 }
-/* 
-<iframe width="1001" height="538" src="https://www.youtube.com/embed/rCHLweZg6uk" title="demo video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-https://www.youtube.com/embed/4ZnQur6rewg?autoplay=1&mute=0&controls=1&origin=https%3A%2F%2Ffullstack.edu.vn&playsinline=1&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1&enablejsapi=1&widgetid=1 */
 export default App;

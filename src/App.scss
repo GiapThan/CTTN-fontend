@@ -2,12 +2,25 @@
   min-height: 100vh;
   width: var(--wight-content);
   display: flex;
-  flex-direction: column; /* 
-  background-color: rgb(233, 147, 34); */
-
+  flex-direction: column;
   margin-top: var(--height-header);
 }
 .App-Content {
   margin-left: var(--width-sidebar);
   height: 100vh;
+}
+@media screen and (max-width: 1000px) {
+  .App {
+    width: 100vw;
+  }
+  .App-Content {
+    width: calc(100vw - var(--width-sidebar));
+    margin-left: var(--width-sidebar);
+  }
+}
+@media screen and (max-width: 800px) {
+  .App-Content {
+    margin-left: 0;
+    width: 100vw;
+  }
 }

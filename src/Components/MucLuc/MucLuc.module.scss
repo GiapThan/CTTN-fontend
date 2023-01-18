@@ -16,10 +16,10 @@
 .list {
   list-style-type: none;
   padding-left: 10px;
-  width: max-content;
 }
 .item {
   padding: 4px;
+  width: max-content;
   cursor: pointer;
 
   svg {
@@ -35,6 +35,9 @@
   }
 
   &:hover {
+    opacity: 0.4;
+  }
+  &:active {
     opacity: 0.6;
   }
 }
