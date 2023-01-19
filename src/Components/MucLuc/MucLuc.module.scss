@@ -41,3 +41,24 @@
     opacity: 0.6;
   }
 }
+
+@media screen and (max-width: 800px) {
+  .item {
+    svg {
+      font-size: 18px;
+    }
+    span {
+      font-size: 22px;
+    }
+  }
+}
+@media screen and (max-width: 500px) {
+  .item {
+    svg {
+      font-size: 16px;
+    }
+    span {
+      font-size: 18px;
+    }
+  }
+}

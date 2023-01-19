@@ -1,25 +1,24 @@
 .wrapper {
   position: fixed;
   inset: 0;
-  z-index: 100;
+  z-index: 1000;
   display: flex;
 }
-
 .wrapper.closing .overlay {
   animation: fade-out 0.2s forwards;
 }
-
 .wrapper.closing .container {
   animation: fade-out 0.2s forwards, grow-down 0.2s forwards;
 }
-
+.wrapper.closing .side-bar {
+  animation: fade-left 0.5s forwards;
+}
 .overlay {
   position: fixed;
   inset: 0;
   background-color: rgba($color: #000000, $alpha: 0.4);
   animation: fade-in 0.2s forwards;
 }
-
 .container {
   background-color: #fff;
   position: relative;
@@ -28,6 +27,15 @@
   border-radius: 8px;
   padding: 18px;
   animation: fade-in 0.2s forwards, grow-up 0.2s forwards;
+}
+.side-bar {
+  background-color: #fff;
+  position: relative;
+  z-index: 1;
+  border-radius: 0 8px 8px 0;
+  padding: 18px;
+  animation: fade-right 0.5s forwards;
+  width: 50%;
 }
 .close-icon {
   width: fit-content;
@@ -43,7 +51,10 @@
   align-items: center;
   margin-top: 24px;
 }
-
+.body.side-bar-body {
+  width: 100%;
+  height: 100%;
+}
 @keyframes fade-in {
   from {
     opacity: 0;
@@ -60,6 +71,22 @@
     opacity: 0;
   }
 }
+@keyframes fade-right {
+  from {
+    margin-left: -320px;
+  }
+  to {
+    margin-left: 0;
+  }
+}
+@keyframes fade-left {
+  from {
+    margin-left: 0;
+  }
+  to {
+    margin-left: -320px;
+  }
+}
 @keyframes grow-up {
   from {
     transform: scale(0.2);
@@ -74,5 +101,15 @@
   }
   to {
     transform: scale(0.2);
+  }
+}
+@media screen and (max-width: 750px) {
+  .side-bar {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .side-bar {
+    width: 70%;
   }
 }

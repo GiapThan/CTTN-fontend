@@ -5,22 +5,13 @@ export const group = [
 
 export const Lesson = [
   {
-    id: '0',
-    groupId: '1',
-    name: 'Bài 11: Khái niệm vecto',
-    linkAvt:
-      'https://drive.google.com/uc?export=view&id=1NmeRnjX0wNuYXVR1sWkwjD3AOwvbZNC_',
-    linkVideo: 'https://www.youtube.com/embed/rCHLweZg6uk',
-    description: 'Đây là mô tả <br/> Chưa biết viết gì 1',
-  },
-  {
     id: '1',
     groupId: '1',
     name: 'Bài 1: Khái niệm vecto',
     linkAvt:
       'https://drive.google.com/uc?export=view&id=1NmeRnjX0wNuYXVR1sWkwjD3AOwvbZNC_',
-    linkVideo: 'https://www.youtube.com/embed/rCHLweZg6uk',
-    description: 'Đây là mô tả <br/> Chưa biết viết gì 1',
+    linkVideo: 'https://www.youtube.com/embed/wyrmO9cVxsM',
+    description: 'Đây là mô tả  Chưa biết viết gì 1',
   },
   {
     id: '2',
@@ -28,8 +19,8 @@ export const Lesson = [
     name: 'Bài 2: Tổng và hiệu 2 vecto',
     linkAvt:
       'https://drive.google.com/uc?export=view&id=11r4FNPiHtprEOIPK4I5hidFPd0-PyR-x',
-    linkVideo: 'https://www.youtube.com/embed/sErES8-yKkE',
-    description: 'Đây là mô tả <br/> Chưa biết viết gì 2',
+    linkVideo: 'https://www.youtube.com/embed/wyrmO9cVxsM',
+    description: 'Đây là mô tả  Chưa biết viết gì 2',
   },
   {
     id: '3',
@@ -37,8 +28,8 @@ export const Lesson = [
     name: 'Bài 3',
     linkAvt:
       'https://drive.google.com/uc?export=view&id=1NmeRnjX0wNuYXVR1sWkwjD3AOwvbZNC_',
-    linkVideo: 'https://www.youtube.com/embed/rCHLweZg6uk',
-    description: 'Đây là mô tả <br/> Chưa biết viết gì 1',
+    linkVideo: 'https://www.youtube.com/embed/wyrmO9cVxsM',
+    description: 'Đây là mô tả  Chưa biết viết gì 1',
   },
   {
     id: '4',
@@ -46,8 +37,8 @@ export const Lesson = [
     name: 'Bài 4',
     linkAvt:
       'https://drive.google.com/uc?export=view&id=11r4FNPiHtprEOIPK4I5hidFPd0-PyR-x',
-    linkVideo: 'https://www.youtube.com/embed/sErES8-yKkE',
-    description: 'Đây là mô tả <br/> Chưa biết viết gì 2',
+    linkVideo: 'https://www.youtube.com/embed/wyrmO9cVxsM',
+    description: 'Đây là mô tả  Chưa biết viết gì 2',
   },
 ];
 

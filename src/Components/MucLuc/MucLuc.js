@@ -13,9 +13,6 @@ const MucLuc = () => {
   const dispatch = useDispatch();
 
   const handleGetDocByLesson = (id) => {
-    /* 
-    ...
-     */
     dispatch(setIdDocView({ idLesson: id }));
   };
 

@@ -16,7 +16,6 @@ const cx = classNames.bind(styles);
 
 const SideBar = () => {
   const [widthScreen, setWidthScreen] = useState(window.innerWidth);
-  console.log(typeof widthScreen);
 
   useEffect(() => {
     if (typeof window !== 'undefined') {

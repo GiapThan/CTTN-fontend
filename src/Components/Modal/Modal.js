@@ -8,6 +8,7 @@ import { useCallback, useEffect, useRef, useState } from 'react';
 
 const cx = classNames.bind(styles);
 const Modal = ({
+  isSideBar = false,
   shouldCloseOnOverlayClick = true,
   children,
   isOpenModal,
@@ -54,12 +55,17 @@ const Modal = ({
           className={cx('overlay')}
           onClick={shouldCloseOnOverlayClick ? handleCloseModal : null}
         ></div>
-        <div className={cx('container')} ref={containerRef}>
+        <div
+          className={isSideBar ? cx('side-bar') : cx('container')}
+          ref={containerRef}
+        >
           <div className={cx('close-icon')} onClick={handleCloseModal}>
             <FontAwesomeIcon color="#50525a" fontSize="20px" icon={faXmark} />
           </div>
 
-          <div className={cx('body')}>{children}</div>
+          <div className={cx('body', `${isSideBar ? 'side-bar-body' : ''}`)}>
+            {children}
+          </div>
         </div>
       </div>
     </Portal>

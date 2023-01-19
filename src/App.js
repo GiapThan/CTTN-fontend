@@ -1,4 +1,5 @@
 import { Route, Routes } from 'react-router-dom';
+import Latex from 'react-latex';
 
 import { publicRoutes } from './Routes';
 import './App.scss';
@@ -11,6 +12,8 @@ import DetailFiles from './Layout/Contents/DetailFiles/DetailFiles';
 import DetailDocumentById from './Layout/Contents/DetailDocumentById/DetailDocumentById';
 
 function App() {
+  const a = `$$ 	\\displaystyle \\lim_{n \\to \\infty} \\sum_{i=1}^{n} x_i \\sqrt{1+x_i^3} \\Delta x = \\newline \\displaystyle\\int_{2}^{5} \\\\ \\left(x\\sqrt{1+x^3}\\right) \\mathrm{d}x$$`;
+
   return (
     <div className={'App'}>
       <Header />
@@ -21,7 +24,11 @@ function App() {
           <Route path={publicRoutes.file} element={<DetailFiles />} />
           <Route
             path={publicRoutes.cotheemkhongbiet}
-            element={<div>cotheemkhongbiet</div>}
+            element={
+              <div>
+                <Latex>{a}</Latex>
+              </div>
+            }
           />
           <Route path={publicRoutes.about} element={<div>about</div>} />
           <Route
