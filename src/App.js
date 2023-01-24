@@ -1,5 +1,5 @@
 import { Route, Routes } from 'react-router-dom';
-import Latex from 'react-latex';
+import { MathComponent } from 'mathjax-react';
 
 import { publicRoutes } from './Routes';
 import './App.scss';
@@ -12,8 +12,6 @@ import DetailFiles from './Layout/Contents/DetailFiles/DetailFiles';
 import DetailDocumentById from './Layout/Contents/DetailDocumentById/DetailDocumentById';
 
 function App() {
-  const a = `$$ 	\\displaystyle \\lim_{n \\to \\infty} \\sum_{i=1}^{n} x_i \\sqrt{1+x_i^3} \\Delta x = \\newline \\displaystyle\\int_{2}^{5} \\\\ \\left(x\\sqrt{1+x^3}\\right) \\mathrm{d}x$$`;
-
   return (
     <div className={'App'}>
       <Header />
@@ -26,7 +24,9 @@ function App() {
             path={publicRoutes.cotheemkhongbiet}
             element={
               <div>
-                <Latex>{a}</Latex>
+                <MathComponent
+                  tex={String.raw`R_n = \sum_{i=1}^{n} f \left( \frac{i\pi}{4n} \right) (x_i - x_{i - 1}) = \displaystyle\sum_{i=1}^{n} \frac{\pi}{4n} \tan \frac{i\pi}{4n}`}
+                />
               </div>
             }
           />
