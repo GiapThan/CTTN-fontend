@@ -30,7 +30,7 @@ const DetailLesson = () => {
 
   return (
     <div className={cx('wrapper')}>
-      <div className={cx('video')}>
+      <div className={cx('video-wrapper')}>
         <Video src={detailLesson.linkVideo} />
       </div>
       <div className={cx('heading')}>

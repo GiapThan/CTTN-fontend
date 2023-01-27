@@ -22,6 +22,17 @@ export const Lesson = [
     linkVideo: 'https://www.youtube.com/embed/wyrmO9cVxsM',
     description: 'Đây là mô tả  Chưa biết viết gì 2',
   },
+
+  {
+    id: '3',
+    groupId: '1',
+    name: 'Bài 3: Tổng và hiệu 2 vecto',
+    linkAvt:
+      'https://drive.google.com/uc?export=view&id=11r4FNPiHtprEOIPK4I5hidFPd0-PyR-x',
+    linkVideo: 'https://www.youtube.com/embed/wyrmO9cVxsM',
+    description: 'Đây là mô tả  Chưa biết viết gì 2',
+  },
+
   {
     id: '3',
     groupId: '2',

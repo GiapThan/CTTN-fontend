@@ -3,9 +3,10 @@
   height: 100%;
   padding-top: 20px;
 }
-.video {
-  width: max-content;
+.video-wrapper {
+  width: 100%;
   margin: 0 auto;
+  padding: 0 20px;
 }
 .heading {
   display: flex;
@@ -42,10 +43,22 @@
   margin-bottom: 6px;
 }
 .update {
-  font-size: smaller;
+  font-size: 14px;
   font-weight: 300;
   margin-top: 13px;
 }
 .description {
   padding-left: 40px;
+
+  p {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .name-lesson {
+    font-size: 20px;
+  }
+  .update {
+    font-size: 14px;
+  }
 }
