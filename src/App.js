@@ -1,5 +1,4 @@
 import { Route, Routes } from 'react-router-dom';
-import { MathComponent } from 'mathjax-react';
 
 import { publicRoutes } from './Routes';
 import './App.scss';
@@ -20,16 +19,8 @@ function App() {
         <Routes>
           <Route path={publicRoutes.home} element={<HomePage />} />
           <Route path={publicRoutes.file} element={<DetailFiles />} />
-          <Route
-            path={publicRoutes.cotheemkhongbiet}
-            element={
-              <div>
-                <MathComponent
-                  tex={String.raw`R_n = \sum_{i=1}^{n} f \left( \frac{i\pi}{4n} \right) (x_i - x_{i - 1}) = \displaystyle\sum_{i=1}^{n} \frac{\pi}{4n} \tan \frac{i\pi}{4n}`}
-                />
-              </div>
-            }
-          />
+          <Route path={publicRoutes.cotheemkhongbiet} element={<div></div>} />
+
           <Route path={publicRoutes.about} element={<div>about</div>} />
           <Route
             path={`${publicRoutes.lessonById}/:id`}

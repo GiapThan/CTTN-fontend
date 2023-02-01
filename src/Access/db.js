@@ -1,7 +1,4 @@
-export const group = [
-  { id: '1', name: 'Toán lớp 10' },
-  { id: '2', name: 'Toán lớp 11' },
-];
+export const group = [{ id: '1', name: 'Toán lớp 10' }];
 
 export const Lesson = [
   {
@@ -27,25 +24,6 @@ export const Lesson = [
     id: '3',
     groupId: '1',
     name: 'Bài 3: Tổng và hiệu 2 vecto',
-    linkAvt:
-      'https://drive.google.com/uc?export=view&id=11r4FNPiHtprEOIPK4I5hidFPd0-PyR-x',
-    linkVideo: 'https://www.youtube.com/embed/wyrmO9cVxsM',
-    description: 'Đây là mô tả  Chưa biết viết gì 2',
-  },
-
-  {
-    id: '3',
-    groupId: '2',
-    name: 'Bài 3',
-    linkAvt:
-      'https://drive.google.com/uc?export=view&id=1NmeRnjX0wNuYXVR1sWkwjD3AOwvbZNC_',
-    linkVideo: 'https://www.youtube.com/embed/wyrmO9cVxsM',
-    description: 'Đây là mô tả  Chưa biết viết gì 1',
-  },
-  {
-    id: '4',
-    groupId: '2',
-    name: 'Bài 4',
     linkAvt:
       'https://drive.google.com/uc?export=view&id=11r4FNPiHtprEOIPK4I5hidFPd0-PyR-x',
     linkVideo: 'https://www.youtube.com/embed/wyrmO9cVxsM',
@@ -97,17 +75,6 @@ export const Document = [
       'https://drive.google.com/uc?export=view&id=161trOJAQd-q7gUbPirifsAN0ELCxOoKQ',
     linkDownload:
       'https://drive.google.com/uc?export=download&id=1qV1WVHPs8j90-j2HvdN1Lnfed2TRIARk',
-  },
-  {
-    id: '5',
-    idLesson: '4',
-    name: 'file demo 5',
-    linkBackg:
-      'https://drive.google.com/uc?export=view&id=1fhQPjz6ZkeCJx68iQkaPBkqdRQTMjNgC',
-    linkFile:
-      'https://drive.google.com/file/d/1KJ7pwZGvKXrp0FsNUDkl8U03MR9x3jcd/preview',
-    linkDownload:
-      'https://drive.google.com/uc?export=download&id=1KJ7pwZGvKXrp0FsNUDkl8U03MR9x3jcd',
   },
   {
     id: '6',

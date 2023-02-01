@@ -1,6 +1,8 @@
 import className from 'classnames/bind';
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faDownload } from '@fortawesome/free-solid-svg-icons';
 
 import style from './DetailDocumentById.module.scss';
 import { Document } from '../../../Access/db';
@@ -29,9 +31,6 @@ const DetailDocumentById = () => {
   return (
     <div className={cx('wrapper')}>
       <h2 className={cx('title')}>{doc.name}</h2>
-      <button onClick={handleDownloadFile} className={cx('download')}>
-        Tải tài liệu
-      </button>
       <div className={cx('file')}>
         <iframe
           title={doc.name}
@@ -40,6 +39,9 @@ const DetailDocumentById = () => {
           height={'100%'}
         ></iframe>
       </div>
+      <button onClick={handleDownloadFile} className={cx('download')}>
+        <FontAwesomeIcon icon={faDownload} /> Tải tài liệu
+      </button>
     </div>
   );
 };
