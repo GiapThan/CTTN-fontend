@@ -110,3 +110,30 @@ export const Document = [
       'https://drive.google.com/uc?export=download&id=1mih-H82mgY2NQoS6f28CQIWlry73SJRA',
   },
 ];
+
+export const Discovery = [
+  {
+    id: 1,
+    name: 'Ứng dụng của vectơ đơn vị',
+    description: 'Đây là mô tả (Option)',
+    linkFile: '',
+    linkAvt:
+      'https://drive.google.com/uc?export=view&id=14wqvNYGO93UOqQG6QXpSEq3pA7H4W_yi',
+  },
+  {
+    id: 2,
+    name: 'Interactive Bubbles ',
+    description: '',
+    linkFile: '',
+    linkAvt:
+      'https://drive.google.com/uc?export=view&id=14wqvNYGO93UOqQG6QXpSEq3pA7H4W_yi',
+  },
+  {
+    id: 3,
+    name: 'Interactive Bubbles ',
+    description: '',
+    linkFile: '',
+    linkAvt:
+      'https://drive.google.com/uc?export=view&id=14wqvNYGO93UOqQG6QXpSEq3pA7H4W_yi',
+  },
+];

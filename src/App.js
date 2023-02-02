@@ -9,6 +9,7 @@ import HomePage from './Layout/Contents/HomePage/HomePage';
 import DetailLesson from './Layout/Contents/DetailLesson/DetailLesson';
 import DetailFiles from './Layout/Contents/DetailFiles/DetailFiles';
 import DetailDocumentById from './Layout/Contents/DetailDocumentById/DetailDocumentById';
+import Discovery from './Layout/Contents/Discovery/Discovery';
 
 function App() {
   return (
@@ -19,7 +20,7 @@ function App() {
         <Routes>
           <Route path={publicRoutes.home} element={<HomePage />} />
           <Route path={publicRoutes.file} element={<DetailFiles />} />
-          <Route path={publicRoutes.cotheemkhongbiet} element={<div></div>} />
+          <Route path={publicRoutes.cotheemkhongbiet} element={<Discovery />} />
 
           <Route path={publicRoutes.about} element={<div>about</div>} />
           <Route

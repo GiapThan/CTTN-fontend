@@ -1,10 +1,10 @@
+import { useEffect } from 'react';
 import className from 'classnames/bind';
 import { useSelector } from 'react-redux';
 
 import MucLuc from '../../../Components/MucLuc/MucLuc';
 import style from './DetailFiles.module.scss';
 import DetailFilesByLesson from '../DetailFilesByLesson/DetailFilesByLesson';
-import { useEffect } from 'react';
 
 const cx = className.bind(style);
 

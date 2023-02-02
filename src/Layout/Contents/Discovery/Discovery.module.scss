@@ -1,0 +1,123 @@
+.wrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.item {
+  width: 40%;
+  margin: 10px 20px;
+  padding: 10px;
+  transition: all 0.3s ease 0s;
+
+  &:hover {
+    box-shadow: 0 0 10px rgba(244, 8, 8, 0.429);
+  }
+}
+.title {
+  color: #03989e;
+  cursor: pointer;
+  width: fit-content;
+
+  svg {
+    margin-right: 6px;
+    font-size: 18px;
+    color: rgb(222, 222, 39);
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 1;
+  }
+}
+.description {
+  margin-left: 6px;
+  min-height: 22px;
+}
+.has-link {
+  background-color: rgba(0, 0, 0, 0.2);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  object-fit: cover;
+  overflow: hidden;
+  padding-top: 56.25%;
+  position: relative;
+  border-radius: 8px;
+  border: 1px solid #cecece;
+}
+.overlay {
+  background-color: transparent;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  transition: all 0.3s ease 0s;
+}
+.cta-btn {
+  background-color: #fff;
+  border: none;
+  border-radius: 999px;
+  color: #000;
+  font-weight: 600;
+  font-size: 14px;
+  position: absolute;
+  left: 50%;
+  top: 60%;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease 0s;
+  z-index: 1;
+  text-align: center;
+  user-select: none;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  cursor: pointer;
+}
+.has-link:hover .cta-btn {
+  padding: 8px 16px;
+  top: 50%;
+  opacity: 1;
+  visibility: visible;
+
+  &:active {
+    opacity: 0.8;
+  }
+}
+.has-link:hover .overlay {
+  background-color: #000c;
+  opacity: 0.5;
+}
+@media screen and (max-width: 1000px) {
+  .item {
+    width: 45%;
+    margin: 10px 16px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .item {
+    margin: 8px 14px;
+  }
+  .title {
+    font-size: 18px;
+  }
+  .description {
+    min-height: 18px;
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .item {
+    width: 80%;
+    margin: 8px auto;
+  }
+  .title {
+    font-size: 20px;
+  }
+  .description {
+    font-size: 18px;
+  }
+}
