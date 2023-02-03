@@ -4,7 +4,7 @@ export const Lesson = [
   {
     id: '1',
     groupId: '1',
-    name: 'Bài 1: Khái niệm vecto',
+    name: 'Bài 1: Khái niệm vectơ',
     linkAvt:
       'https://drive.google.com/uc?export=view&id=1NmeRnjX0wNuYXVR1sWkwjD3AOwvbZNC_',
     linkVideo: 'https://www.youtube.com/embed/FJj5tQuwCFE',
@@ -13,7 +13,7 @@ export const Lesson = [
   {
     id: '2',
     groupId: '1',
-    name: 'Bài 2: Tổng và hiệu 2 vecto',
+    name: 'Bài 2: Tổng và hiệu 2 vectơ',
     linkAvt:
       'https://drive.google.com/uc?export=view&id=11r4FNPiHtprEOIPK4I5hidFPd0-PyR-x',
     linkVideo: '',
