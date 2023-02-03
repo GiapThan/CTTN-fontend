@@ -7,7 +7,7 @@ export const Lesson = [
     name: 'Bài 1: Khái niệm vecto',
     linkAvt:
       'https://drive.google.com/uc?export=view&id=1NmeRnjX0wNuYXVR1sWkwjD3AOwvbZNC_',
-    linkVideo: 'https://www.youtube.com/embed/wyrmO9cVxsM',
+    linkVideo: 'https://www.youtube.com/embed/FJj5tQuwCFE',
     description: 'Đây là mô tả  Chưa biết viết gì 1',
   },
   {
@@ -16,17 +16,17 @@ export const Lesson = [
     name: 'Bài 2: Tổng và hiệu 2 vecto',
     linkAvt:
       'https://drive.google.com/uc?export=view&id=11r4FNPiHtprEOIPK4I5hidFPd0-PyR-x',
-    linkVideo: 'https://www.youtube.com/embed/wyrmO9cVxsM',
+    linkVideo: '',
     description: 'Đây là mô tả  Chưa biết viết gì 2',
   },
 
   {
     id: '3',
     groupId: '1',
-    name: 'Bài 3: Tổng và hiệu 2 vecto',
+    name: 'Bài 3: Tích của một số với một vectơ',
     linkAvt:
-      'https://drive.google.com/uc?export=view&id=11r4FNPiHtprEOIPK4I5hidFPd0-PyR-x',
-    linkVideo: 'https://www.youtube.com/embed/wyrmO9cVxsM',
+      'https://drive.google.com/uc?export=view&id=1X_9jKANCXLex2lwCQghLnuzFp3kh1Fo1',
+    linkVideo: '',
     description: 'Đây là mô tả  Chưa biết viết gì 2',
   },
 ];
