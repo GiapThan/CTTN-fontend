@@ -29,6 +29,15 @@ export const Lesson = [
     linkVideo: '',
     description: 'Đây là mô tả  Chưa biết viết gì 2',
   },
+  {
+    id: '4',
+    groupId: '1',
+    name: 'Bài 4: Tích vô hướng của hai vectơ',
+    linkAvt:
+      'https://drive.google.com/uc?export=view&id=1kvcWc5cUN3UE635yWd5XtpRJrkenRBWX',
+    linkVideo: '',
+    description: 'Đây là mô tả  Chưa biết viết gì 2',
+  },
 ];
 
 export const Document = [
@@ -135,18 +144,5 @@ export const Discovery = [
     linkDownload: '',
     linkAvt:
       'https://drive.google.com/uc?export=view&id=1mlSfU9W9lD1PhmmbrLHzAVY4jwkpyze0',
-  },
-  {
-    id: '3',
-    name: 'Interactive Bubbles ',
-    description: '',
-    isFile: true,
-    linkRedirect: '',
-    linkFile:
-      'https://drive.google.com/file/d/18SZ5jmGWl7T692fDw24bqoCK99BEAvxj/preview',
-    linkDownload:
-      'https://drive.google.com/uc?export=download&id=18SZ5jmGWl7T692fDw24bqoCK99BEAvxj',
-    linkAvt:
-      'https://drive.google.com/uc?export=view&id=1PneMLIW5xUuZpZgeBTjcM0AuYXpV_bcz',
   },
 ];
