@@ -113,27 +113,40 @@ export const Document = [
 
 export const Discovery = [
   {
-    id: 1,
+    id: '1',
     name: 'Ứng dụng của vectơ đơn vị',
     description: 'Đây là mô tả (Option)',
-    linkFile: '',
+    isFile: true,
+    linkRedirect: '',
+    linkFile:
+      'https://drive.google.com/file/d/18SZ5jmGWl7T692fDw24bqoCK99BEAvxj/preview',
+    linkDownload:
+      'https://drive.google.com/uc?export=download&id=18SZ5jmGWl7T692fDw24bqoCK99BEAvxj',
     linkAvt:
-      'https://drive.google.com/uc?export=view&id=14wqvNYGO93UOqQG6QXpSEq3pA7H4W_yi',
+      'https://drive.google.com/uc?export=view&id=1PneMLIW5xUuZpZgeBTjcM0AuYXpV_bcz',
   },
   {
-    id: 2,
+    id: '2',
     name: 'Interactive Bubbles ',
     description: '',
+    isFile: false,
+    linkRedirect: 'https://www.geogebra.org/m/uncnz7ju',
     linkFile: '',
+    linkDownload: '',
     linkAvt:
-      'https://drive.google.com/uc?export=view&id=14wqvNYGO93UOqQG6QXpSEq3pA7H4W_yi',
+      'https://drive.google.com/uc?export=view&id=1mlSfU9W9lD1PhmmbrLHzAVY4jwkpyze0',
   },
   {
-    id: 3,
+    id: '3',
     name: 'Interactive Bubbles ',
     description: '',
-    linkFile: '',
+    isFile: true,
+    linkRedirect: '',
+    linkFile:
+      'https://drive.google.com/file/d/18SZ5jmGWl7T692fDw24bqoCK99BEAvxj/preview',
+    linkDownload:
+      'https://drive.google.com/uc?export=download&id=18SZ5jmGWl7T692fDw24bqoCK99BEAvxj',
     linkAvt:
-      'https://drive.google.com/uc?export=view&id=14wqvNYGO93UOqQG6QXpSEq3pA7H4W_yi',
+      'https://drive.google.com/uc?export=view&id=1PneMLIW5xUuZpZgeBTjcM0AuYXpV_bcz',
   },
 ];

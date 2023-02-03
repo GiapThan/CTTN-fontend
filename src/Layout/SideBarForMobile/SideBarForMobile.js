@@ -5,7 +5,7 @@ import {
   faHome,
   faFile,
   faQuestion,
-  faComment,
+  faCircleInfo,
 } from '@fortawesome/free-solid-svg-icons';
 
 import styles from './SideBarForMobile.module.scss';
@@ -60,7 +60,7 @@ const SideBarForMobile = () => {
             }
             to={publicRoutes.about}
           >
-            <FontAwesomeIcon icon={faComment} />
+            <FontAwesomeIcon icon={faCircleInfo} />
             <span>Giới thiệu</span>
           </NavLink>
         </li>

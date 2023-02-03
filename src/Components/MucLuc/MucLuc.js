@@ -28,6 +28,7 @@ const MucLuc = () => {
               <ul className={cx('list')}>
                 {newLesson.map((e, i) => (
                   <li
+                    key={i}
                     onClick={() => handleGetDocByLesson(e.id)}
                     className={cx('item')}
                   >

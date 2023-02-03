@@ -1,5 +1,4 @@
 .wrapper {
-  width: 100%;
   margin-left: 20px;
 }
 .title {
@@ -20,6 +19,7 @@
 .item {
   padding: 4px;
   width: max-content;
+  user-select: none;
   cursor: pointer;
 
   svg {

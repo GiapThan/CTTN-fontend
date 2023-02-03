@@ -10,6 +10,8 @@ import DetailLesson from './Layout/Contents/DetailLesson/DetailLesson';
 import DetailFiles from './Layout/Contents/DetailFiles/DetailFiles';
 import DetailDocumentById from './Layout/Contents/DetailDocumentById/DetailDocumentById';
 import Discovery from './Layout/Contents/Discovery/Discovery';
+import DiscoveryById from './Layout/Contents/DiscoveryById/DiscoveryById';
+import InfoGraphic from './Layout/Contents/InfoGraphic/InfoGraphic';
 
 function App() {
   return (
@@ -21,8 +23,12 @@ function App() {
           <Route path={publicRoutes.home} element={<HomePage />} />
           <Route path={publicRoutes.file} element={<DetailFiles />} />
           <Route path={publicRoutes.cotheemkhongbiet} element={<Discovery />} />
+          <Route
+            path={`${publicRoutes.cotheemkhongbiet}/:id`}
+            element={<DiscoveryById />}
+          />
 
-          <Route path={publicRoutes.about} element={<div>about</div>} />
+          <Route path={publicRoutes.about} element={<InfoGraphic />} />
           <Route
             path={`${publicRoutes.lessonById}/:id`}
             element={<DetailLesson />}

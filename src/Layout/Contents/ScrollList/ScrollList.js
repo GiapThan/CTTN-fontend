@@ -18,7 +18,7 @@ const ScrollList = (props) => {
   useEffect(() => {
     const newArr = Lesson.filter((e) => e.groupId === props.idGroup);
     setLesson(newArr);
-  }, []);
+  }, [props.idGroup]);
 
   return (
     <div className={cx('wrapper')}>
@@ -28,7 +28,7 @@ const ScrollList = (props) => {
       <div className={cx('body')}>
         <section className={cx('contents')}>
           {lesson.map((e, i) => (
-            <section className={cx('course-item')}>
+            <section key={i} className={cx('course-item')}>
               <CommonItem>
                 <Link
                   to={`${publicRoutes.lessonById}/${e.id}`}

@@ -1,0 +1,15 @@
+.wrapper {
+  width: 100%;
+}
+.content {
+  width: fit-content;
+  margin: 0 auto;
+}
+@media screen and (max-width: 950px) {
+  .content {
+    width: 90%;
+    img {
+      width: -webkit-fill-available;
+    }
+  }
+}
