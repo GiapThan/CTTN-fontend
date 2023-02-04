@@ -21,7 +21,6 @@ const Discovery = () => {
   });
 
   const handleRedirect = (element) => {
-    console.log(element);
     if (element.isFile) {
       navigation(`${publicRoutes.cotheemkhongbiet}/${element.id}`);
     } else {

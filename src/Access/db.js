@@ -19,7 +19,6 @@ export const Lesson = [
     linkVideo: '',
     description: '',
   },
-
   {
     id: '3',
     groupId: '1',
@@ -44,13 +43,14 @@ export const Document = [
   {
     id: '1',
     idLesson: '1',
-    name: 'file demo 1',
-    linkFile:
-      'https://drive.google.com/file/d/1mih-H82mgY2NQoS6f28CQIWlry73SJRA/preview',
+    name: 'Lý thuyết và các bài tập (Có lời giải)',
+    isTeX: true,
+    teX: ``,
+    linkFile: '',
     linkBackg:
-      'https://drive.google.com/uc?export=view&id=1T_kCkDUx21yxczpA95q-lRFlfBwN4q1D',
+      'https://drive.google.com/uc?export=view&id=1dyhw4LV0Squ8k_ZD0Y7V7cAmUR2RERCv',
     linkDownload:
-      'https://drive.google.com/uc?export=download&id=1mih-H82mgY2NQoS6f28CQIWlry73SJRA',
+      'https://drive.google.com/uc?export=download&id=1TMlx18nf4sfMLvPuMGHHPQAU4cHkUdpC',
   },
 ];
 

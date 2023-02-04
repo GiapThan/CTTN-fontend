@@ -12,6 +12,7 @@ import DetailDocumentById from './Layout/Contents/DetailDocumentById/DetailDocum
 import Discovery from './Layout/Contents/Discovery/Discovery';
 import DiscoveryById from './Layout/Contents/DiscoveryById/DiscoveryById';
 import InfoGraphic from './Layout/Contents/InfoGraphic/InfoGraphic';
+import DetailTeXById from './Layout/Contents/DetailTeXById/DetailTeXById';
 
 function App() {
   return (
@@ -36,6 +37,10 @@ function App() {
           <Route
             path={`${publicRoutes.docById}/:id`}
             element={<DetailDocumentById />}
+          />
+          <Route
+            path={`${publicRoutes.docById}/tex/:id`}
+            element={<DetailTeXById />}
           />
           <Route path="*" element={<Redirect />} />
         </Routes>

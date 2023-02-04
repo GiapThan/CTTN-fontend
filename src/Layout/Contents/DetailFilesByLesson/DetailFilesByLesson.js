@@ -62,7 +62,15 @@ const DetailFilesByLesson = (props) => {
               <div className={cx('overlay')}></div>
               <div className={cx('cta-btn')}>
                 <button
-                  onClick={() => navigation(`${publicRoutes.docById}/${e.id}`)}
+                  onClick={() =>
+                    navigation(
+                      `${
+                        e.isTeX
+                          ? `${publicRoutes.docById}/tex/${e.id}`
+                          : `${publicRoutes.docById}/${e.id}`
+                      }`,
+                    )
+                  }
                 >
                   Xem tài liệu
                 </button>
@@ -74,7 +82,15 @@ const DetailFilesByLesson = (props) => {
               </div>
             </div>
             <h4 className={cx('title')}>
-              <Link to={`${publicRoutes.docById}/${e.id}`}>{e.name}</Link>
+              <Link
+                to={`${
+                  e.isTeX
+                    ? `${publicRoutes.docById}/tex/${e.id}`
+                    : `${publicRoutes.docById}/${e.id}`
+                }`}
+              >
+                {e.name}
+              </Link>
             </h4>
           </section>
         ))}

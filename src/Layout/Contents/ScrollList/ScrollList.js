@@ -10,7 +10,6 @@ import { Lesson } from '../../../Access/db';
 const cx = classNames.bind(styles);
 
 const ScrollList = (props) => {
-  console.log('demoooo');
   const [lesson, setLesson] = useState([]);
 
   useEffect(() => {
