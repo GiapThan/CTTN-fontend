@@ -50,22 +50,17 @@ const DetailTeXById = () => {
       <ul>
         <li>
           Vectơ c&oacute; điểm đầu l&agrave; A, điểm cuối l&agrave; B được
-          k&yacute; hiệu l&agrave;{' '}
-          <MathComponent tex={String.raw`\vec{AB}`} display={false} />, đọc
-          l&agrave; vectơ{' '}
-          <MathComponent tex={String.raw`\vec{AB}`} display={false} />.
+          k&yacute; hiệu l&agrave; {vecto('AB')}, đọc l&agrave; vectơ{' '}
+          {vecto('AB')}.
         </li>
         <li>
           Đường thẳng đi qua hai điểm A v&agrave; B được gọi l&agrave;
-          gi&aacute; của vectơ{' '}
-          <MathComponent tex={String.raw`\vec{AB}`} display={false} />.
+          gi&aacute; của vectơ {vecto('AB')}.
         </li>
         <li>
           Độ d&agrave;i của đoạn thẳng AB được gọi l&agrave; độ d&agrave;i, hay
-          module của vectơ{' '}
-          <MathComponent tex={String.raw`\vec{AB}`} display={false} /> v&agrave;
-          được k&yacute; hiệu l&agrave;{' '}
-          <MathComponent tex={String.raw`|\vec{AB}|`} display={false} />
+          module của vectơ {vecto('AB')} v&agrave; được k&yacute; hiệu l&agrave;{' '}
+          {vecto('|AB|')}
         </li>
       </ul>
 
@@ -86,29 +81,24 @@ const DetailTeXById = () => {
         </li>
         <li>
           Ba điểm A, B, C thẳng h&agrave;ng khi v&agrave; chỉ khi hai vectơ{' '}
-          <MathComponent tex={String.raw`\vec{AB}`} display={false} />,{' '}
-          <MathComponent tex={String.raw`\vec{AC}`} display={false} />{' '}
-          c&ugrave;ng phương.
+          {vecto('AB')}, {vecto('AC')} c&ugrave;ng phương.
         </li>
       </ul>
       <p>
         <strong>3. Hai vectơ bằng nhau</strong>
       </p>
       <p>
-        Hai vectơ <MathComponent tex={String.raw`\vec{a}`} display={false} />{' '}
-        v&agrave; <MathComponent tex={String.raw`\vec{b}`} display={false} />{' '}
-        được gọi l&agrave; <strong>bằng nhau</strong> nếu ch&uacute;ng c&oacute;
-        c&ugrave;ng hướng v&agrave; c&ugrave;ng độ d&agrave;i.
+        Hai vectơ {vecto('a')} v&agrave; {vecto('b')} được gọi l&agrave;{' '}
+        <strong>bằng nhau</strong> nếu ch&uacute;ng c&oacute; c&ugrave;ng hướng
+        v&agrave; c&ugrave;ng độ d&agrave;i.
       </p>
       <p>
-        K&yacute; hiệu:{' '}
-        <MathComponent tex={String.raw`\vec{a}`} display={false} /> ={' '}
-        <MathComponent tex={String.raw`\vec{b}`} display={false} /> .
+        K&yacute; hiệu: {vecto('a')} = {vecto('b')} .
       </p>
       <p>
-        Hai vectơ <MathComponent tex={String.raw`\vec{a}`} display={false} />{' '}
-        v&agrave; {vecto('b')} được gọi l&agrave; <strong>đối nhau</strong> nếu
-        ch&uacute;ng ngược hướng v&agrave; c&oacute; c&ugrave;ng độ d&agrave;i.
+        Hai vectơ {vecto('a')} v&agrave; {vecto('b')} được gọi l&agrave;{' '}
+        <strong>đối nhau</strong> nếu ch&uacute;ng ngược hướng v&agrave;
+        c&oacute; c&ugrave;ng độ d&agrave;i.
       </p>
       <p>
         K&yacute; hiệu: {vecto('a')} = &minus; {vecto('b')} .
