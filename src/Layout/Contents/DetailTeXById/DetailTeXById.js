@@ -233,8 +233,8 @@ const DetailTeXById = () => {
         Cho lục gi&aacute;c đều ABCDEF c&oacute; t&acirc;m O.
       </p>
       <p>
-        a) T&igrave;m c&aacute;c vectơ kh&aacute;c #&raquo;0 c&ugrave;ng phương
-        với vectơ {vecto('AO')}.
+        a) T&igrave;m c&aacute;c vectơ kh&aacute;c {vecto('0')} c&ugrave;ng
+        phương với vectơ {vecto('AO')}.
       </p>
       <p>
         b) T&igrave;m c&aacute;c vectơ bằng với vectơ {vecto('AB')} v&agrave;{' '}
