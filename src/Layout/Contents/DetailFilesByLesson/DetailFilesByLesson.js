@@ -40,6 +40,17 @@ const DetailFilesByLesson = (props) => {
       <h4>{nameGroup}</h4>
       <h3 className={cx('title')}>{nameLesson}</h3>
       <section className={cx('body')}>
+        {files.length === 0 && (
+          <p
+            style={{
+              marginLeft: '10px',
+              color: 'red',
+              opacity: 0.6,
+            }}
+          >
+            Comming soon
+          </p>
+        )}
         {files.map((e, i) => (
           <section key={i} className={cx('item')}>
             <div
