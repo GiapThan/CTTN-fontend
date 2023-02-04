@@ -12,7 +12,7 @@ const cx = className.bind(style);
 const vecto = (a) => (
   <MathComponent tex={String.raw`\overrightarrow{${a}}`} display={false} />
 );
-const can = (b = '', a) => (
+const can = (a, b = '') => (
   <MathComponent tex={String.raw`${b}\sqrt{${a}}`} display={false} />
 );
 const DetailTeXById = () => {
@@ -282,8 +282,8 @@ const DetailTeXById = () => {
       </p>
       <p>
         b) Trước hết, do tam gi&aacute;c ABC vu&ocirc;ng c&acirc;n tại A
-        n&ecirc;n ta c&oacute; BC = {can('2AB^2')} = a {can('2')}. V&igrave; M,
-        N lần lượt l&agrave; trung điểm AB, AC n&ecirc;n MN l&agrave; đường
+        n&ecirc;n ta c&oacute; BC = {can('2AB^2')} = {can('2', 'a')}. V&igrave;
+        M, N lần lượt l&agrave; trung điểm AB, AC n&ecirc;n MN l&agrave; đường
         trung b&igrave;nh của tam gi&aacute;c ABC.
       </p>
       <p>
@@ -432,8 +432,8 @@ const DetailTeXById = () => {
         <span style={{ color: '#33cccc' }}>
           <strong> B&agrave;i to&aacute;n 7.</strong>
         </span>{' '}
-        Cho hai điểm A, B ph&acirc;n biệt. T&igrave;m điểm M thỏa m&atilde;n #
-        &raquo; MA = # &raquo; MB.
+        Cho hai điểm A, B ph&acirc;n biệt. T&igrave;m điểm M thỏa m&atilde;n{' '}
+        {vecto('MA')} = {vecto('MB')}.
       </p>
       <p>
         <strong> Lời giải.</strong>
@@ -502,7 +502,7 @@ const DetailTeXById = () => {
       </p>
 
       <p>
-        Vậy, độ d&agrave;i của vectơ {vecto('AC')} l&agrave; {can('a', '3')}.
+        Vậy, độ d&agrave;i của vectơ {vecto('AC')} l&agrave; {can('3', 'a')}.
       </p>
       <button onClick={handleDownloadFile} className={cx('download')}>
         <FontAwesomeIcon icon={faDownload} /> Tải tài liệu
