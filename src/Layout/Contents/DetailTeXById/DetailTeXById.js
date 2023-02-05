@@ -7,14 +7,10 @@ import { MathComponent } from 'mathjax-react';
 
 import style from './DetailTeXById.module.scss';
 import { Document } from '../../../Access/db';
+import { vecto, can, TexInLine } from '../../../Components/LaTex';
 
 const cx = className.bind(style);
-const vecto = (a) => (
-  <MathComponent tex={String.raw`\overrightarrow{${a}}`} display={false} />
-);
-const can = (a, b = '') => (
-  <MathComponent tex={String.raw`${b}\sqrt{${a}}`} display={false} />
-);
+
 const DetailTeXById = () => {
   const params = useParams();
 
@@ -254,8 +250,8 @@ const DetailTeXById = () => {
         <span style={{ color: '#33cccc' }}>
           <strong>B&agrave;i to&aacute;n 3.&nbsp;</strong>
         </span>
-        Cho tam gi&aacute;c ABC vu&ocirc;ng c&acirc;n tại A v&agrave; AB = a.
-        Gọi M, N lần lượt l&agrave; trung điểm AB, AC.
+        Cho tam gi&aacute;c ABC vu&ocirc;ng c&acirc;n tại A v&agrave;{' '}
+        {TexInLine('AB = a')}. Gọi M, N lần lượt l&agrave; trung điểm AB, AC.
       </p>
       <p>
         a) T&igrave;m c&aacute;c vectơ kh&aacute;c {vecto('0')} v&agrave;
@@ -293,7 +289,7 @@ const DetailTeXById = () => {
         <span style={{ color: '#33cccc' }}>
           <strong>B&agrave;i to&aacute;n 4.</strong>
         </span>{' '}
-        Cho h&igrave;nh thoi ABCD cạnh a v&agrave;{' '}
+        Cho h&igrave;nh thoi ABCD cạnh {TexInLine('a')} v&agrave;{' '}
         <MathComponent display={false} tex={String.raw`\widehat{A} = 60^o`} />.
       </p>
       <p>
@@ -304,9 +300,9 @@ const DetailTeXById = () => {
         <strong>Lời giải. </strong>
       </p>
       <p>
-        a) V&igrave; ABCD l&agrave; h&igrave;nh thoi n&ecirc;n ta c&oacute; AB =
-        BC = CD = DA. Từ đ&oacute;, ta c&oacute; {vecto('|AB|')} ={' '}
-        {vecto('|BC|')}.
+        a) V&igrave; ABCD l&agrave; h&igrave;nh thoi n&ecirc;n ta c&oacute;{' '}
+        {TexInLine('AB =BC = CD = DA')}. Từ đ&oacute;, ta c&oacute;{' '}
+        {vecto('|AB|')} = {vecto('|BC|')}.
       </p>
       <p>
         b) Độ d&agrave;i đoạn thẳng AC được t&iacute;nh theo c&ocirc;ng thức{' '}
@@ -327,8 +323,8 @@ const DetailTeXById = () => {
         <span style={{ color: '#33cccc' }}>
           <strong> B&agrave;i to&aacute;n 5.</strong>
         </span>{' '}
-        Cho tam gi&aacute;c ABC c&oacute; A&prime; , B&prime; , C &prime; lần
-        lượt l&agrave; trung điểm của c&aacute;c cạnh BC, CA, AB
+        Cho tam gi&aacute;c ABC c&oacute; {TexInLine("A', B', C'")} lần lượt
+        l&agrave; trung điểm của c&aacute;c cạnh BC, CA, AB
       </p>
       <p>
         a) Chứng minh rằng {vecto("BC'")} = {vecto("C'A")} = {vecto("A'B'")}.
@@ -341,8 +337,8 @@ const DetailTeXById = () => {
         <strong>Lời giải. </strong>
       </p>
       <p>
-        a) V&igrave; C &prime; l&agrave; trung điểm AB n&ecirc;n ta c&oacute;
-        BC&prime; = C &prime;A.
+        a) V&igrave; {TexInLine("C'")} l&agrave; trung điểm AB n&ecirc;n ta
+        c&oacute; {TexInLine("BC' = C'A")}.
       </p>
       <p>
         Mặt kh&aacute;c, ta dễ thấy {vecto("BC'")} v&agrave; {vecto("C'A")}{' '}
@@ -467,12 +463,14 @@ const DetailTeXById = () => {
         <span style={{ color: '#33cccc' }}>
           <strong>B&agrave;i to&aacute;n 9.</strong>
         </span>{' '}
-        Cho h&igrave;nh lục gi&aacute;c đều ABCDEF c&oacute; AB = a. T&iacute;nh
-        độ d&agrave;i c&aacute;c vectơ {vecto('AC')}, {vecto('AF')}.
+        Cho h&igrave;nh lục gi&aacute;c đều ABCDEF c&oacute;{' '}
+        {TexInLine('AB = a')}. T&iacute;nh độ d&agrave;i c&aacute;c vectơ{' '}
+        {vecto('AC')}, {vecto('AF')}.
       </p>
       <p>
-        <strong>Lời giải.</strong>&nbsp; Trước hết, ta thấy rằng AB = AF = a
-        n&ecirc;n độ d&agrave;i của {vecto('AF')} bằng a.
+        <strong>Lời giải.</strong>&nbsp; Trước hết, ta thấy rằng{' '}
+        {TexInLine('AB = AF = a')} n&ecirc;n độ d&agrave;i của {vecto('AF')}{' '}
+        bằng {TexInLine('a')}.
       </p>
       <p>
         Trong một lục gi&aacute;c đều, mỗi g&oacute;c c&oacute; số đo bằng{' '}
