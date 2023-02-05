@@ -50,7 +50,7 @@ export const Document = [
     linkBackg:
       'https://drive.google.com/uc?export=view&id=1dyhw4LV0Squ8k_ZD0Y7V7cAmUR2RERCv',
     linkDownload:
-      'https://drive.google.com/uc?export=download&id=1TMlx18nf4sfMLvPuMGHHPQAU4cHkUdpC',
+      'https://drive.google.com/uc?export=download&id=1dR6qrhE1FR9jxiONq2athcbOFMml_8YH',
   },
 ];
 
