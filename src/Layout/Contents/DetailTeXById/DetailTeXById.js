@@ -274,15 +274,9 @@ const DetailTeXById = () => {
       </p>
       <p>
         Suy ra MN ={' '}
-        <MathComponent
-          display={false}
-          tex={String.raw`\displaystyle\frac{1}{2} \cdot BC`}
-        />{' '}
-        ={' '}
-        <MathComponent
-          display={false}
-          tex={String.raw`\displaystyle\frac{a\sqrt{2}}{2}`}
-        />
+        {TexInLine(
+          '\\displaystyle \\frac{1}{2} \\cdot BC = \\frac{a\\sqrt{2}}{2}',
+        )}
         .
       </p>
       <p>
@@ -313,7 +307,7 @@ const DetailTeXById = () => {
         .
       </p>
       <p>
-        &Aacute;p dụng c&ocirc;ng thức tr&ecirc;n, ta suy ra{' '}
+        &Aacute;p dụng c&ocirc;ng thức tr&ecirc;n, ta suy ra
         <MathComponent
           display={true}
           tex={String.raw`AC = \sqrt{ AB^2 + AD^2 + 2AB\cdot AD \cdot \cos \widehat{BAD}} = \sqrt{a^2 + a^2+2a^2\cdot60^o} = a\sqrt{3}`}
