@@ -8,6 +8,11 @@ import { MathComponent } from 'mathjax-react';
 import style from './DetailTeXById.module.scss';
 import { Document } from '../../../Access/db';
 import { vecto, can, TexInLine } from '../../../Components/LaTex';
+import imgB1 from '../../../Access/B1.BT1.png';
+import imgB2 from '../../../Access/B1.BT2.png';
+import imgB8_1 from '../../../Access/B1.BT8-1.png';
+import imgB8_2 from '../../../Access/B1.BT8-2.png';
+import imgB9 from '../../../Access/B1.BT9.png';
 
 const cx = className.bind(style);
 
@@ -183,6 +188,7 @@ const DetailTeXById = () => {
       <p>a) c&aacute;c vectơ c&ugrave;ng phương,</p>
       <p>b) c&aacute;c cặp vectơ c&ugrave;ng phương nhưng ngược hướng,</p>
       <p>c) c&aacute;c cặp vectơ bằng nhau.</p>
+      <img style={{ width: '50%', margin: '0 auto' }} alt="b1" src={imgB1} />
       <p>
         <strong>Lời giải.</strong>
       </p>
@@ -240,12 +246,16 @@ const DetailTeXById = () => {
         {vecto('FE')} v&agrave; {vecto('EF')}.
       </p>
       <p>
-        b) C&aacute;c vectơ bằng vectơ {vecto('AB')} l&agrave;: {vecto('AF')},{' '}
+        b) C&aacute;c vectơ bằng vectơ {vecto('AB')} l&agrave;: {vecto('FO')},{' '}
         {vecto('OC')} v&agrave; {vecto('ED')}. C&aacute;c vectơ bằng vectơ{' '}
         {vecto('CD')} l&agrave;: {vecto('BO')}, {vecto('OE')} v&agrave;{' '}
         {vecto('AF')}.
       </p>
-      <p>c) Vẽ.</p>
+      <p>
+        c) Các vecto bằng vectơ {vecto('AB')} là {vecto('OC')}, {vecto('CI')},{' '}
+        {vecto('DJ')} được vẽ như hình dưới.
+      </p>
+      <img style={{ width: '50%', margin: '0 auto' }} alt="" src={imgB2} />
       <p>
         <span style={{ color: '#33cccc' }}>
           <strong>B&agrave;i to&aacute;n 3.&nbsp;</strong>
@@ -413,16 +423,17 @@ const DetailTeXById = () => {
           <strong> B&agrave;i to&aacute;n 7.</strong>
         </span>{' '}
         Cho hai điểm A, B ph&acirc;n biệt. T&igrave;m điểm M thỏa m&atilde;n{' '}
-        {vecto('MA')} = {vecto('MB')}.
+        {vecto('MA')} = {TexInLine(`- \\overrightarrow{MB}`)}.
       </p>
       <p>
         <strong> Lời giải.</strong>
       </p>
       <p>
-        X&eacute;t điểm M thỏa m&atilde;n {vecto('MA')} = {vecto('MB')}. Khi ấy
-        ta c&oacute; {vecto('MA')} c&ugrave;ng phương nhưng ngược hướng với{' '}
-        {vecto('MB')}, hay n&oacute;i c&aacute;ch kh&aacute;c, ta c&oacute; ba
-        điểm A, M, B thẳng h&agrave;ng theo thứ tự ấy.
+        X&eacute;t điểm M thỏa m&atilde;n {vecto('MA')} ={' '}
+        {TexInLine(`- \\overrightarrow{MB}`)}. Khi ấy ta c&oacute; {vecto('MA')}{' '}
+        c&ugrave;ng phương nhưng ngược hướng với {vecto('MB')}, hay n&oacute;i
+        c&aacute;ch kh&aacute;c, ta c&oacute; ba điểm A, M, B thẳng h&agrave;ng
+        theo thứ tự ấy.
       </p>
       <p>
         Mặt kh&aacute;c, ta lại c&oacute; MA = MB. Vậy điểm M thỏa m&atilde;n
@@ -447,12 +458,14 @@ const DetailTeXById = () => {
         v&agrave; AB = DC. Từ đ&oacute; ta suy ra ABCD sẽ l&agrave; h&igrave;nh
         b&igrave;nh h&agrave;nh.
       </p>
+      <img style={{ width: '50%', margin: '0 auto' }} alt="" src={imgB8_1} />
       <p>
         Nếu ta c&oacute; th&ecirc;m {vecto('|AB|')} = {vecto('|BC|')}, nghĩa
         l&agrave; AB = BC, th&igrave; h&igrave;nh b&igrave;nh h&agrave;nh ABCD
         sẽ c&oacute; 4 cạnh b&ecirc;n bằng nhau. Vậy khi ấy tứ gi&aacute;c ABCD
         l&agrave; h&igrave;nh thoi.
       </p>
+      <img style={{ width: '50%', margin: '0 auto' }} alt="" src={imgB8_2} />
       <p>
         <span style={{ color: '#33cccc' }}>
           <strong>B&agrave;i to&aacute;n 9.</strong>
@@ -466,6 +479,7 @@ const DetailTeXById = () => {
         {TexInLine('AB = AF = a')} n&ecirc;n độ d&agrave;i của {vecto('AF')}{' '}
         bằng {TexInLine('a')}.
       </p>
+      <img style={{ width: '50%', margin: '0 auto' }} alt="" src={imgB9} />
       <p>
         Trong một lục gi&aacute;c đều, mỗi g&oacute;c c&oacute; số đo bằng{' '}
         <MathComponent display={false} tex={String.raw`120^O`} /> . Từ
